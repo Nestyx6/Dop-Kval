@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Игра угадай число</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+      
+      .form input[type="number"] {
+        width: 200px;
+        margin-bottom: 10px;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+
+      .lastResult {
+        color: rgb(0, 0, 0);
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Игра угадай число</h1>
+
+    <p>Угадай загаданное число от 1 до 10. В этой игре 5 попыток</p>
+
+    <div class="form">
+      <label for="guessField">Введите число: </label>
+      <input type="number" min="1" max="10" required id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+      let randomNumber = Math.floor(Math.random() * 10) + 1;
+      const guesses = document.querySelector('.guesses');
+      const lastResult = document.querySelector('.lastResult');
+      const lowOrHi = document.querySelector('.lowOrHi');
+      const guessSubmit = document.querySelector('.guessSubmit');
+      const guessField = document.querySelector('.guessField');
+      let guessCount = 1;
+      let resetButton;
+      
+
+      function checkGuess() {
+        const userGuess = Number(guessField.value);
+        if (userGuess >= 1 && userGuess <=10) {
+            if (guessCount === 1) {
+            guesses.textContent = 'Ваши попытки: ';
+            }
+
+            guesses.textContent += userGuess + ' ';
+
+            if (userGuess === randomNumber) {
+                lastResult.textContent = 'Ура ты угадал число';
+                lastResult.style.backgroundColor = 'green';
+                lowOrHi.textContent = '';
+                setGameOver();
+            } else if (guessCount === 5) {
+                lastResult.textContent = 'Ты не угадал число ;(';
+                lowOrHi.textContent = '';
+                setGameOver();
+            } else {
+                lastResult.textContent = 'Неверно';
+                lastResult.style.backgroundColor = 'red';
+            if(userGuess < randomNumber) {
+                lowOrHi.textContent = 'Загаданое число больше вашего' ;
+            } else if(userGuess > randomNumber) {
+                lowOrHi.textContent = 'загаданное число меньше вашего';
+          }
+        }
+        } else{
+            lastResult.textContent = 'Что-то тут не так. Нужно угадать число от 1 до 10 включительно :) Давай начнем сначала'
+            setGameOver()
+        }
+        
+
+        guessCount++;
+        guessField.value = '';
+        guessField.focus();
+      }
+
+      guessSubmit.addEventListener('click', checkGuess);
+
+      function setGameOver() {
+        guessField.disabled = true;
+        guessSubmit.disabled = true;
+        resetButton = document.createElement('button');
+        resetButton.textContent = 'начать новую игру';
+        document.body.appendChild(resetButton);
+        resetButton.addEventListener('click', resetGame);
+      }
+
+      function resetGame() {
+        guessCount = 1;
+        const resetParas = document.querySelectorAll('.resultParas p');
+        for (const resetPara of resetParas) {
+          resetPara.textContent = '';
+        }
+
+        resetButton.parentNode.removeChild(resetButton);
+        guessField.disabled = false;
+        guessSubmit.disabled = false;
+        guessField.value = '';
+        guessField.focus();
+        lastResult.style.backgroundColor = 'white';
+        randomNumber = Math.floor(Math.random() * 10) + 1;
+      }
+    </script>
+  </body>
+</html>
