@@ -1,0 +1,49 @@
+/*Обнуляем все отступы и границы*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*Меняем метод подчета ширины блока. В ширину будут включены размеры границ*/
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*Убираем линии обводки у некоторых элементов в некоторых браузерах*/
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/*Для некоторых html5 тегов добавялем значение display: block, что делает их блочными элементами*/
+nav,footer, header,aside{display: block;}
+
+/*Применим для тела страницы и всего документа в целом уравнивающие параметры*/
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 22px;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Просим некоторые теги унаследовать семество шрифта. По умолчанию они этого не делают*/
+input, button, textarea{
+    font-family: inherit;
+}
+
+/*И еще несколько параметров для различных элементов*/
+input::-ms-clear {display: none;} /*убирает крестик в IE*/
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a,a:visited {text-decoration: none; color: inherit;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+/*И даем сходжие параметры для заголовков*/
+h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
