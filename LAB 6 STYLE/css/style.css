@@ -1,0 +1,142 @@
+@media screen and (max-width: 1200px){
+    .container{
+        width: 80%;
+        align-items: center;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .offer{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .desktop{
+        width: 65%;
+        margin-top: 40px;
+    }
+    .wishes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wish{
+        margin-top: 40px;
+    }
+    .offer_text{
+        width: 100%;
+    }
+    
+}
+
+@media  screen and (max-width: 992px) {
+    .container{
+        width: 80%;
+    }
+    .form{
+        width: 90%;
+    }
+    .main_block{
+        justify-content:center
+    }
+    .Name {
+        width: 600px;
+        height: 60px;
+    }
+    .quantity {
+        width: 400px;
+        height: 55px;
+        padding-left: 175px;
+    }
+    .header-img{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        width: 80%;
+    }
+    .main_block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-img{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main_block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Name {
+        width: 450px;
+        height: 60px;
+    }
+    .header-img{
+        width: 380px;
+        margin-bottom: 100px;
+        padding-top: 10px;
+    }
+}
+
+@media  screen and (max-width: 430px) {
+    .header-img{
+        width: 330px;
+        margin-bottom: 100px;
+        padding-top: 10px;
+    }
+    .main_title{
+        font-size:30px;
+    }
+    .quantity {
+        width: 300px;
+        height: 55px;
+        padding-left: 130px;
+    }
+    .Name{
+        width: 350px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 378px){
+    .header-img{
+        width: 300px;
+        padding-top: 10px;
+    }
+    .Name {
+        width: 300px;
+        height: 50px;
+    }
+    .but_forms {
+        width: 270px;
+    }
+    .container{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .header-img {
+        width: 280px;
+        margin-bottom: 60px;
+    }
+    .btn {
+        width: 280px;
+    }
+    .forms_title {
+        line-height: 35px;
+        margin-bottom: 35px;
+        margin-top: 35px;
+    }
+    .Name {
+        width: 280px;
+    }
+    .quantity{
+        width: 280px;
+        height: 40px;
+        padding-left: 110px;
+    }
+}

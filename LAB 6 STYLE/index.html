@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="img\logo.png" alt="pic">
+            <div class="wrapper">
+                <div class="offer">
+                    <h1 class="title"> С помощью нас <br> вы можете создать то, о чем </h1>
+                    <span class="title_span">желаете</span>
+                    <p class="offer_text">Наши возможности + опыт позволят Вам достич огромного успеха. Мы верим в вас! И знаем это на все 100%. Вас не остановить!  </p>
+                    <a href="#" class="btn">Узнать больше...</a>
+                </div>
+                <img class="header-img" src="img\header-img.png" alt="pic" class="hesder-img">
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <h2 class="main_title">Что вам необходимо?</h2>
+            <div class="main_block">
+                <div class="blocks">
+                
+                    <img class="blocks_img" src="img/f3.png" alt="pic">
+                    <h3 class="blocks_title">Первый блок</h3>
+                    <p class="blocks_text">qwqwqwqw </p>
+                </div> 
+                <div class="blocks">
+                    <img class="blocks_img" src="img/f4.png" alt="pic">
+                    <h3 class="blocks_title">Второй блок</h3>
+                    <p class="blocks_text">qwqwqwqwqwqwwqwqw?</p>
+                </div>
+                <div class="blocks">
+                    <img class="blocks_img" src="img/f5.png" alt="pic">
+                    <h3 class="blocks_title">Третий блок</h3>
+                    <p class="blocks_text">qwqwqwqwqwqwwqwqw!</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="forms">
+        <div class="container">
+            <div class="con-cir">
+                
+            </div> 
+            <h3 class="forms_title">Форма заказа обрантного звонка</h3>
+            
+                <form class="forms_block" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="name_block">
+                        <input id="name" class="Name" type="text" placeholder="Имя" oninput="checkFirst" required />
+                    <p id="name_p_error"></p>
+                </div>
+                <div class="name_block">
+                    <input id="email" class="Name" type="email" name="userpass" id="E-mail" placeholder="E-mail" /> 
+                    <p id="email_p_error"></p>
+                </div>
+                <div class="name_block">
+                    <input id="phone" class="Name" type="tel" name="tel" id="tel" placeholder="Телефон" />
+                    <p id="phone_p_error"></p>
+                </div>
+                <div class="name_block"> 
+                    <input id="theme" class="Name" type="text" name="text" id="text" placeholder="Какая тема вас интересует?" />
+                    <p id="theme_p_error"></p>
+                </div>
+                <div class="name_block"> 
+                    <input id="quantity" class="quantity" type="number" name="quantity" placeholder="Кол-во" />
+                    <p id="quantity_p_error"></p>
+                </div>
+                <div>
+                    <button id="btn_submit" type="submit" class="but_forms" disabled>Отправить вопрос!</button>
+                </div>
+                
+                </form>    
+        </div>
+    </section>
+    
+    <section class="end">
+        <div class="container">
+             <p class="end_text">@ все на этом сайте защищено</p>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

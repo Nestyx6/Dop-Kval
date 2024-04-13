@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: rgb(34,164,195);
+    background: linear-gradient(0deg,
+    rgba(34,164,195,1) 0%,
+    rgba(24,197,237,1) 23%,
+    rgba(43,201,238,1) 33%, 
+    rgba(43,179,244,1) 51%,
+    rgba(21,151,213,1) 61%, 
+    rgba(16,128,198,1) 77%, 
+    rgba(20,121,207,1) 87%);
+}
+.container{
+    
+    width: 1200px;
+    margin: 0 auto;
+   
+}
+
+.logo{
+    margin-top: 40px;
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+
+.offer{
+    width: 700px;
+}
+
+.title{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title_span{
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-family: 'ubuntu',sans-serif;
+    font-weight: bold;
+}
+
+.offer_text {
+    font-size: 18px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.header-img{
+    width: 480px;
+    margin-bottom: 100px;
+}
+/* Вторая секция */
+.main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main_block{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.blocks{
+    text-align: center;
+    width: 280px;
+}
+.blocks_img{
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+
+.blocks_text{
+    color: darkgrey;
+    margin-bottom: 50px;
+}
+/* Третья секция */
+
+.forms{
+    background-color: rgb(230, 238, 244);
+    padding-top: 35px;
+}
+
+
+
+.forms_title{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'ubuntu',sans-serif;
+   
+}
+
+.forms_block{
+    text-align: center;
+}
+
+.name_block{
+   margin-top: 20px;
+
+}
+.Name{
+    
+    padding: 10px;
+    padding-left: 20px;
+    width:330px;
+    height:60x;
+}
+.quantity {
+    width: 273px;
+    height: 40px;
+    padding-left: 115px;
+}
+
+
+/*Четвертая секция*/
+.end{
+    background: rgb(34,151,195);
+    background: linear-gradient(0deg,
+    rgba(34,151,195,1) 0%,
+    rgba(48,143,192,1) 46%,
+    rgba(21,85,140,1) 100%);
+    display: flex;
+    flex-grow:1;
+}
+
+.end_text{
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+

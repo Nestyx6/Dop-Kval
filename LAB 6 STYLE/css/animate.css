@@ -1,0 +1,183 @@
+.con-cir{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(46, 130, 219);
+    position: relative;
+    animation-name:blue-circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    display: flex;
+}
+
+@keyframes blue-circle{
+    0%{
+       left: 350px; 
+    }
+    50%{
+        border-radius: 0%;
+        background-color: rgb(98, 98, 197);
+    }
+    100%{
+        left: 770px;    
+    }
+}
+/* для экранов 992 px */
+@media screen and (max-width: 992px) {
+    @keyframes blue-circle{
+        0%{
+           left: 180px; 
+        }
+        50%{
+            border-radius: 0%;
+            background-color: rgb(98, 98, 197);
+        }
+        100%{
+            left: 570px;    
+        }
+    }
+}
+/* Для экранов 768 px */
+@media screen and (max-width: 768px) {
+    @keyframes blue-circle{
+        0%{
+           left: 50px; 
+        }
+        50%{
+            border-radius: 0%;
+            background-color: rgb(98, 98, 197);
+        }
+        100%{
+            left: 500px;
+        }
+    }
+}
+/* Для экранов 576 px */
+@media screen and (max-width: 576px) {
+    @keyframes blue-circle{
+        0%{
+           left: 55px; 
+        }
+        50%{
+            border-radius: 0%;
+            background-color: rgb(98, 98, 197);
+        }
+        100%{
+            left: 340px;
+        }
+    }
+}
+/* Для экранов 430 px */
+@media screen and (max-width: 430px) {
+    @keyframes blue-circle{
+        0%{
+           left: 30px; 
+        }
+        50%{
+            border-radius: 0%;
+            background-color: rgb(98, 98, 197);
+        }
+        100%{
+            left: 240px;
+        }
+    }
+}
+/* Для экранов 320 px */
+@media screen and (max-width: 430px) {
+    @keyframes blue-circle{
+        0%{
+           left: 30px; 
+        }
+        50%{
+            border-radius: 0%;
+            background-color: rgb(98, 98, 197);
+        }
+        100%{
+            left: 170px;
+        }
+    }
+}
+
+.main_title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: 'ubuntu',sans-serif;
+    animation-name: rgbtext;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+
+}
+@keyframes rgbtext{
+    0%{
+        color: black;
+    }
+    10%{
+        color: rgb(249, 25, 25);
+    }
+    20%{
+        color: rgb(246, 183, 11);
+    }
+    30%{
+        color: yellow;
+    }
+    40%{
+        color: rgb(115, 246, 8);
+    }
+    50%{
+        color: rgb(2, 245, 116);
+    }
+    60%{
+        color: rgb(2, 255, 234);
+    }
+    70%{
+        color: rgb(4, 16, 252);
+    }
+    80%{
+        color: rgb(94, 3, 251);
+    }
+    90%{
+        color: rgb(237, 1, 250);
+    }
+    100%{
+        color: rgb(250, 2, 126);
+    }
+}
+
+.btn{
+    width: 220px;
+    height: 55px;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(233,186,46);
+    transition: all 0.5;
+}
+
+.btn:hover{
+    background-color: rgb(137, 234, 89);
+    box-shadow: 3px 5px 2px 1px rgba(6, 97, 8, 0.374)
+}
+
+.but_forms{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    width: 330px;
+    height: 55px;
+    color: black;
+    font-size: 16px;
+    background-color: rgb(233,186,46);
+    border: gray;
+}
+.but_forms:hover{
+    background-color: rgb(111, 251, 113);
+    box-shadow: 3px 5px 3px 1px rgba(24, 216, 59, 0.238);
+}
