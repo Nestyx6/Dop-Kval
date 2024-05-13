@@ -1,0 +1,105 @@
+.todo_list {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.todo_item {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 3px solid rgb(137, 7, 7);
+  width: 350px;
+}
+
+.todo_item__text {
+  font-size: 35px;
+  color:rgb(79, 10, 10);
+  font-family: sans-serif;
+  margin: 5px;
+  text-align: center;
+}
+
+.todo_item__textabout{
+  font-size: 22px;
+  color: black;
+  font-family: sans-serif;
+  margin: 4px;
+  text-align:left;
+}
+
+.text {
+  font-size: 40px;
+  color:rgb(45, 2, 75);
+  font-family: sans-serif;
+  margin: 15px;
+  text-align: center;
+} 
+
+.cont_butn{
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.butn_inc{
+  font-size: 30px;
+  height: 40px;
+  width: 70px;
+  background-color: rgb(26, 63, 250);
+  border: 2px;
+  border-color: rgb(5, 3, 61);
+  align-items: center;
+}
+
+.butn_dec{
+  font-size: 30px;
+  height: 40px;
+  width: 70px;
+  background-color: rgb(26, 63, 250);
+  border: 2px;
+  border-color: rgb(5, 3, 61); 
+  align-items: center;
+}
+
+.select_d{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.coast_text{
+  font-size: 25px;
+  color:rgb(0, 0, 0);
+  font-family: sans-serif;
+  margin: 5px;
+  text-align: center;
+}
+
+.request_text{
+  font-size: 28px;
+  color:rgb(0, 0, 0);
+  font-family: sans-serif;
+  margin: 5px;
+  text-align: center;
+}
+
+.backet{
+  font-size: 30px;
+  height: 40px;
+  width: 120px;
+  background-color: rgb(26, 63, 250);
+  border: 2px;
+  border-color: rgb(5, 3, 61);
+  align-items: center;
+}
+
+.buts{
+  display: flex;
+  margin-left: 50px;
+}
